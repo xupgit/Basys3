@@ -1,0 +1,12 @@
+`timescale 1ns / 1ps
+/////////////////////////////////////////////////////////////////
+// Module Name: xup_inv
+/////////////////////////////////////////////////////////////////
+module xup_inv #(parameter DELAY = 3)(
+    input wire a,
+    output wire y
+    );
+    
+    not #DELAY (y,a);
+    
+endmodule
