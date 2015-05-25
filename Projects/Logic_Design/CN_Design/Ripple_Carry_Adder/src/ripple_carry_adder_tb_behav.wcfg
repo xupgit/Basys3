@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ripple_carry_adder_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ripple_carry_adder_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject db_ref_id="1" fp_name="/ripple_carry_adder_tb/a" type="array">
+      <obj_property name="ElementShortName">a[7:0]</obj_property>
+      <obj_property name="ObjectShortName">a[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ripple_carry_adder_tb/b" type="array">
+      <obj_property name="ElementShortName">b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ripple_carry_adder_tb/s" type="array">
+      <obj_property name="ElementShortName">s[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ripple_carry_adder_tb/c_in" type="logic">
+      <obj_property name="ElementShortName">c_in</obj_property>
+      <obj_property name="ObjectShortName">c_in</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ripple_carry_adder_tb/c_out" type="logic">
+      <obj_property name="ElementShortName">c_out</obj_property>
+      <obj_property name="ObjectShortName">c_out</obj_property>
+   </wvobject>
+</wave_config>

@@ -20,7 +20,7 @@ Execute the commands **in bold** in the tcl console
 
 **set basys3_github {C:/xup/IPI_LIB/XUP_LIB}**
 
-3\. Change to the src directory of this project using the *cd* command:
+3\. Change to the *src* directory of this project using the *cd* command:
 
 **cd \<path to this project directory>**
 
