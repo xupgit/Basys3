@@ -6,7 +6,7 @@ The board features an Artix series 7 Xilinx FPGA and is an ideal platform for lo
 For questions, please contact the [Xilinx University Program](mailto:xup@xilinx.com).
 
 ### Basys3 Board Files
-You may download the Basys3 board files directory from here and place it in the **\<Vivado_install_directory>\2014.4\data\boards\board_parts\artix7** directory. This will enable the board entry to be listed during the project creation step in Vivado and also use it in the Tcl script.
+You may download the Basys3 board files zip file from here and extract it in the **\<Vivado_install_directory>\2014.4\data\boards\board_parts\artix7** directory. This will enable the board entry to be listed during the project creation step in Vivado and also use it in the Tcl script.
 
 
 ### XUP_LIB and 74LSXX
