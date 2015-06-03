@@ -32,7 +32,7 @@ set constraints_file carry_lookahead_adder_basys3_pins.xdc
 set testbench carry_lookahead_adder_tb.v
 # Create project for Basys 3
 create_project -force $project_name ./$project_name -part xc7a35tcpg236-1
-set_property board_part xilinx.com:basys3:part0:1.1 [current_project]
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property target_language verilog [current_project]
 set_property simulator_language Verilog [current_project]
 set_property ip_repo_paths  $basys3_github [current_project]
