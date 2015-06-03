@@ -18,7 +18,9 @@
 //           d
 /////////////////////////////////////////////////////////////////
 
-module seg7display#(parameter MODULES=1)
+module seg7display#(parameter MODULES=1, 
+        DP_0=1, DP_1=1, DP_2=1, DP_3=1, 
+        DP_4=1, DP_5=1, DP_6=1, DP_7=1)
 (
     input wire [15:0] x_l,
     input wire [15:0] x_h=0,
@@ -27,7 +29,8 @@ module seg7display#(parameter MODULES=1)
     output reg [6:0] a_to_g,
     output wire [3:0] an_l,
     output wire [3:0] an_h,
-    output wire dp 
+    output reg dp_l,
+    output reg dp_h 
 );
 
 wire [2:0] s;     
@@ -38,12 +41,25 @@ wire [7:0] aen;
 reg [7:0] an;
 reg [20:0] clkdiv;
 
-assign dp = 1;
+wire [3:0] dp_l_i;
+wire [3:0] dp_h_i;
+wire [7:0] dpen;
+
+assign dp_l_i[0] = (DP_0) ? 1'b0 : 1'b1;
+assign dp_l_i[1] = (DP_1) ? 1'b0 : 1'b1;
+assign dp_l_i[2] = (DP_2) ? 1'b0 : 1'b1;
+assign dp_l_i[3] = (DP_3) ? 1'b0 : 1'b1;
+assign dp_h_i[0] = (DP_4) ? 1'b0 : 1'b1;
+assign dp_h_i[1] = (DP_5) ? 1'b0 : 1'b1;
+assign dp_h_i[2] = (DP_6) ? 1'b0 : 1'b1;
+assign dp_h_i[3] = (DP_7) ? 1'b0 : 1'b1;
 assign s = (MODULES==1) ? {1'b0,clkdiv[19:18]} : clkdiv[20:18];
 assign aen_l = 4'b1111; // all turned off initially
 assign aen_h = 4'b1111; // all turned off initially
 assign aen = (MODULES==1) ? {4'b0000,aen_l} : {aen_h,aen_l};
 assign {an_h,an_l}=an;
+
+assign dpen = (MODULES==1) ? {4'b0000,dp_l_i} : {dp_h_i,dp_l_i};
 
 // MUX
 always @(posedge clk)
@@ -95,6 +111,23 @@ always @(*)begin
         an=8'b11111111;
         if(aen[s] == 1)
             an[s] = 0;
+    end       
+end
+
+always @(*)begin
+    if(MODULES==1)
+    begin
+        if(aen_l[s] == 1)
+            dp_l = dpen[s];
+    end
+    else
+    begin
+        if(aen[s] == 1) begin
+            if(s<4) 
+                dp_l = dpen[s];
+            else
+                dp_h = dpen[s];
+        end
     end       
 end
 

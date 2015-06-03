@@ -64,7 +64,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a6302662</spirit:value>
+            <spirit:value>03e6e6df</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -80,7 +80,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a6302662</spirit:value>
+            <spirit:value>03e6e6df</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -94,7 +94,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>858aaf74</spirit:value>
+            <spirit:value>e7093de9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -262,17 +262,41 @@
         </spirit:vendorExtensions>
       </spirit:port>
       <spirit:port>
-        <spirit:name>dp</spirit:name>
+        <spirit:name>dp_l</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
+              <spirit:typeName>reg</spirit:typeName>
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
               <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dp_h</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue>0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:presence>optional</xilinx:presence>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="$MODULES=2">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
       </spirit:port>
     </spirit:ports>
     <spirit:modelParameters>
@@ -280,6 +304,46 @@
         <spirit:name>MODULES</spirit:name>
         <spirit:displayName>Modules</spirit:displayName>
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.MODULES">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>DP_0</spirit:name>
+        <spirit:displayName>Dp 0</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DP_0">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>DP_1</spirit:name>
+        <spirit:displayName>Dp 1</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DP_1">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>DP_2</spirit:name>
+        <spirit:displayName>Dp 2</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DP_2">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>DP_3</spirit:name>
+        <spirit:displayName>Dp 3</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DP_3">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>DP_4</spirit:name>
+        <spirit:displayName>Dp 4</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DP_4">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>DP_5</spirit:name>
+        <spirit:displayName>Dp 5</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DP_5">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>DP_6</spirit:name>
+        <spirit:displayName>Dp 6</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DP_6">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>DP_7</spirit:name>
+        <spirit:displayName>Dp 7</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DP_7">1</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -294,6 +358,46 @@
       <spirit:enumeration>1</spirit:enumeration>
       <spirit:enumeration>2</spirit:enumeration>
     </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_2</spirit:name>
+      <spirit:enumeration spirit:text="TRUE">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="FALSE">0</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_3</spirit:name>
+      <spirit:enumeration spirit:text="TRUE">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="FALSE">0</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_4</spirit:name>
+      <spirit:enumeration spirit:text="TRUE">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="FALSE">0</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_5</spirit:name>
+      <spirit:enumeration spirit:text="TRUE">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="FALSE">0</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_6</spirit:name>
+      <spirit:enumeration spirit:text="TRUE">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="FALSE">0</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_7</spirit:name>
+      <spirit:enumeration spirit:text="TRUE">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="FALSE">0</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_8</spirit:name>
+      <spirit:enumeration spirit:text="TRUE">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="FALSE">0</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_9</spirit:name>
+      <spirit:enumeration spirit:text="TRUE">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="FALSE">0</spirit:enumeration>
+    </spirit:choice>
   </spirit:choices>
   <spirit:fileSets>
     <spirit:fileSet>
@@ -301,7 +405,7 @@
       <spirit:file>
         <spirit:name>src/seg7display.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_a6302662</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_03e6e6df</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -317,7 +421,7 @@
         <spirit:name>xgui/seg7display_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
-        <spirit:userFileType>CHECKSUM_e5b4e619</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_98104f18</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -347,6 +451,46 @@
       <spirit:name>Component_Name</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">seg7display_v1_0</spirit:value>
     </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DP_0</spirit:name>
+      <spirit:displayName>Decimal Point for Segment 0</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DP_0" spirit:choiceRef="choices_2">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DP_1</spirit:name>
+      <spirit:displayName>Decimal Point for Segment 1</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DP_1" spirit:choiceRef="choices_3">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DP_2</spirit:name>
+      <spirit:displayName>Decimal Point for Segment 2</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DP_2" spirit:choiceRef="choices_4">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DP_3</spirit:name>
+      <spirit:displayName>Decimal Point for Segment 3</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DP_3" spirit:choiceRef="choices_5">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DP_4</spirit:name>
+      <spirit:displayName>Decimal Point for Segment 4</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DP_4" spirit:choiceRef="choices_6">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DP_5</spirit:name>
+      <spirit:displayName>Decimal Point for Segment 5</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DP_5" spirit:choiceRef="choices_7">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DP_6</spirit:name>
+      <spirit:displayName>Decimal Point for Segment 6</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DP_6" spirit:choiceRef="choices_8">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DP_7</spirit:name>
+      <spirit:displayName>Decimal Point for Segment 7</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DP_7" spirit:choiceRef="choices_9">1</spirit:value>
+    </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
@@ -362,8 +506,8 @@
       <xilinx:displayName>seg7display_v1_0</xilinx:displayName>
       <xilinx:vendorDisplayName>XUP</xilinx:vendorDisplayName>
       <xilinx:vendorURL>http://www.xilinx.com/university</xilinx:vendorURL>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2015-04-21T22:23:47Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2015-06-03T16:17:25Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:ip:seg7display:1.0_ARCHIVE_LOCATION">C:/xup/IPI_Lib/seg7display/seg7display.srcs/sources_1/imports</xilinx:tag>
         <xilinx:tag xilinx:name="xilinx.com:XUP:seg7display:1.0_ARCHIVE_LOCATION">C:/xup/IPI_Lib/seg7display/seg7display.srcs/sources_1/imports</xilinx:tag>
@@ -372,10 +516,10 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2014.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="5a8b395c"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c31852f4"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="585df0b6"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="119294c0"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="9a88e215"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2cdfc6cd"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="5125324d"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="9764ace8"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="4568a5a5"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>
