@@ -5,7 +5,8 @@ proc init_gui { IPINST } {
   set Page_0 [ipgui::add_page $IPINST -name "Page 0"]
   ipgui::add_param $IPINST -name "SIZE" -parent ${Page_0}
   ipgui::add_static_text $IPINST -name "Output Ports" -parent ${Page_0} -text {When Size > 3 then the tens port is available 
-When Size > 6 then the hundreds port is available}
+When Size > 6 then the hundreds port is available
+When Size > 9 then the thousands port is available}
 
 
 }
