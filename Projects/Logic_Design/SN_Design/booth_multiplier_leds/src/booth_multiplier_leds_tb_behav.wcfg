@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="booth_multiplier_leds_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="booth_multiplier_leds_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject db_ref_id="1" fp_name="/booth_multiplier_leds_tb/sys_clock" type="logic">
+      <obj_property name="ElementShortName">sys_clock</obj_property>
+      <obj_property name="ObjectShortName">sys_clock</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/booth_multiplier_leds_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/booth_multiplier_leds_tb/multiplier_in" type="array">
+      <obj_property name="ElementShortName">multiplier_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">multiplier_in[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/booth_multiplier_leds_tb/multiplicand_in" type="array">
+      <obj_property name="ElementShortName">multiplicand_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">multiplicand_in[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/booth_multiplier_leds_tb/result" type="array">
+      <obj_property name="ElementShortName">result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">result[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
