@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sequence_detector_moore_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sequence_detector_moore_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject db_ref_id="1" fp_name="/sequence_detector_moore_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sequence_detector_moore_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sequence_detector_moore_tb/ain" type="logic">
+      <obj_property name="ElementShortName">ain</obj_property>
+      <obj_property name="ObjectShortName">ain</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sequence_detector_moore_tb/count" type="array">
+      <obj_property name="ElementShortName">count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sequence_detector_moore_tb/detected" type="logic">
+      <obj_property name="ElementShortName">detected</obj_property>
+      <obj_property name="ObjectShortName">detected</obj_property>
+   </wvobject>
+</wave_config>
