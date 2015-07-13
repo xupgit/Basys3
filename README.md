@@ -1,4 +1,4 @@
-# Basys3 Github 
+# Basys3 Github
 This repository provides Digital Design Libraries and Projects targeting the [Xilinx University Program (XUP) **Basys3 board** from Digilent](www.digilentinc.com/Products/Detail.cfm?NavPath=2,400,1288&Prod=BASYS3).
 
 
