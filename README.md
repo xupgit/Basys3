@@ -7,6 +7,9 @@ For questions, please contact the [Xilinx University Program](mailto:xup@xilinx.
 
 ### How to use these files
 
+Digilient YouTube guide:
+http://youtu.be/nJ4LgLWuEcM
+
 ### Basys3 Board Files
 Download the Basys3 board files (basys3.zip) file and extract it here: **\<Vivado_install_directory>\2014.4\data\boards\board_parts\artix7** directory. (This has been tested with 2014.4 but should work with other versions. After doing this, the board can be selected when creating a project in Vivado.
 
