@@ -1,7 +1,7 @@
 #AXI IP Controller for WS2812 LED controller#
 
 The WS2812 controller can drive LED chains using a single data line using a timing protocol. For more details on the WS2812, please see:
-[WS2812.pdf](ws2812.pdf) 
+[WS2812.pdf](https://github.com/xupgit/Basys3/blob/master/Library/Interface/ws2812-LED-controller/WS2812.pdf) 
 
 The IP has been created with Vivado 2015.2 and is provided in IP-XACT form, to work with Vivado IP Integrator. It can also be used in a non-IPI design.
 
