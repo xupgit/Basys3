@@ -1,5 +1,5 @@
 # Basys3 Github
-This repository provides Digital Design Libraries and Projects for Vivado IP Integrator targeting the [Xilinx University Program (XUP) **Basys3 board** from Digilent](www.digilentinc.com/Products/Detail.cfm?NavPath=2,400,1288&Prod=BASYS3).
+This repository provides Digital Design Libraries and Projects for Vivado IP Integrator targeting the [Xilinx University Program (XUP) **Basys3 board** from Digilent](http://store.digilentinc.com/basys-3-artix-7-fpga-trainer-board-recommended-for-introductory-users/).
 
 
 The board features an Artix series 7 Xilinx FPGA and is an ideal platform for low cost teaching and student projects.
